@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samiya | Web Designer</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7ff;
+            color: #222;
+        }
+
+        header {
+            background: #5b5bd6;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin: 0 0 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #5b5bd6;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            background: #5b5bd6;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hi, I'm Samiya 👋</h1>
+        <p>Web Designer | HTML | CSS | JavaScript</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I create simple, attractive and responsive websites
+            using HTML, CSS and JavaScript.
+        </p>
+    </section>
+
+    <section>
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>🍕 Restaurant Website</h3>
+            <p>A simple restaurant website with menu and contact section.</p>
+        </div>
+
+        <div class="project">
+            <h3>📚 Online Exam Website</h3>
+            <p>An online examination website with questions and timer.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>If you need a simple website, you can contact me.</p>
+        <button onclick="showMessage()">Contact Me</button>
+    </section>
+
+    <footer>
+        <p>© 2026 Samiya | Web Designer</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Thank you for visiting my website! 😊");
+        }
+    </script>
+
+</body>
+</html>
