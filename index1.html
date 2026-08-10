@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samiya | Web Designer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7ff;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        nav h2 {
+            margin: 0;
+            color: #6c63ff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+
+        /* Home */
+        .home {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #6c63ff, #8f88ff);
+            color: white;
+        }
+
+        .home h1 {
+            font-size: 42px;
+            margin: 0 0 15px;
+        }
+
+        .home p {
+            font-size: 19px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 25px;
+            background: white;
+            color: #6c63ff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 55px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #6c63ff;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .about {
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        /* Services */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #6c63ff;
+        }
+
+        /* Projects */
+        .project {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .project h3 {
+            color: #6c63ff;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 13px 25px;
+            background: #6c63ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 14px;
+            }
+
+            .home h1 {
+                font-size: 32px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Samiya</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Home -->
+    <div class="home" id="home">
+        <h1>Hi, I'm Samiya 👋</h1>
+
+        <p>
+            I create simple, clean and attractive websites.
+        </p>
+
+        <a href="#services" class="btn">
+            View My Services
+        </a>
+    </div>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                Hello! I'm Samiya. I am learning web development
+                and creating websites using HTML, CSS and JavaScript.
+            </p>
+
+            <p>
+                My goal is to create simple and useful websites
+                for students, small businesses and personal projects.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services">
+        <h2>My Services</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>🌐 Website</h3>
+                <p>
+                    Simple personal and business websites.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🎨 Web Design</h3>
+                <p>
+                    Clean and attractive webpage designs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💻 HTML & CSS</h3>
+                <p>
+                    Basic HTML and CSS website development.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>📚 Online Exam Website</h3>
+            <p>
+                A simple online examination website with
+                questions, options and navigation.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>🧮 JavaScript Calculator</h3>
+            <p>
+                A basic calculator created using HTML, CSS
+                and JavaScript.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>🌐 Personal Website</h3>
+            <p>
+                This portfolio website is one of my web projects.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+            <p>
+                Interested in my work? Feel free to contact me.
+            </p>
+
+            <!-- Replace the email below with your own email later -->
+            <a
+                href="mailto:your-email@example.com"
+                class="contact-btn">
+                Contact Me
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Samiya. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
